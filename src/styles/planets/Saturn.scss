@@ -1,0 +1,138 @@
+.planet1-content {
+    position: absolute;
+    top: calc(50% - 7rem);
+    left: calc(50% - 7rem);
+    transform: rotate(20deg);
+
+    .planet1{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+
+        //planeta
+        .planet1-planet {
+            position: absolute;
+            width:15rem;
+            height: 15rem;
+            border-radius:50%;
+            background-color: rgba(204,88,3, .8);
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        //manchas por debajo
+        .planet1-planet:before {
+            content:"";
+            position: absolute;
+            width: 7.5rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            top: 7.4rem;
+            background-color: rgba(242,149,89,.9);
+            left: 2rem;
+            box-shadow: 2.5rem 0 rgba(242,149,89,.9), -3rem 2rem rgba(204,88,3, .8), 6rem 2rem rgba(204,88,3, .8), 0rem 2rem rgba(242,149,89,.9), 0 3.9rem rgba(242,149,89,.9),5rem 3.9rem rgba(242,149,89,.9), -1.5rem 5.9rem rgba(204,88,3, .8), 7.5rem 6rem rgba(204,88,3, .8), 30px 5.9rem rgba(242,149,89,.9);
+        }
+        
+        //sombra pordebajo
+        .planet1-planet:after {
+            content:"";
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-radius:50%;
+            box-shadow: inset -10px 10px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        
+        //mitad de planeta
+        .planet1-up {
+            position: absolute;
+            width: 15rem;
+            height: 7.5rem;
+            border-radius: 7.5rem 7.5rem 0 0;
+            background-color: rgba(204,88,3, .8);
+            top:0;
+            overflow: hidden;
+            z-index: 3;
+        }
+        
+        //manchas mitad circulo
+        .planet1-up:before {
+            content:"";
+            position: absolute;
+            width: 7.5rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            left: 3.5rem;
+            top: -.5rem;
+            background-color: rgba(242,149,89,.9);
+            box-shadow: -5.6rem 2rem rgba(204,88,3, .8), 3.5rem 2rem rgba(204,88,3, .8), -2rem 2rem rgba(242,149,89,.9), 0 4rem rgba(242,149,89,.9), -5rem 4rem rgba(242,149,89,.9), -7.5rem 6rem rgba(204,88,3, .8),30px 6rem rgba(204,88,3, .8), -50px 6rem rgba(242,149,89,.9);
+        }
+        
+        //sombra por encima
+        .planet1-up:after {
+            content:"";
+            position: absolute;
+            width: 15rem;
+            height: 7.5rem;
+            border-radius: 7.5rem 7.5rem 0 0;
+            box-shadow: inset -10px 10px rgba(0,0,0,0.2);
+        }
+
+        .planet1-ring {
+            width: 28rem;
+            height: 28rem;
+            border: solid 3rem #b8b08d;
+            border-radius: 50%;
+            top: calc(50% - 14rem); 
+            left: calc(50% - 14rem); 
+            position: absolute;
+            transform: rotate3d(1, 0, 0, 75deg); 
+            z-index: 1;
+        }
+    }
+}
+
+
+@media screen and (min-width: 3000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+    
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

@@ -1,0 +1,53 @@
+.mars-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: rotate(-10deg);
+
+    .mars{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+
+        //planeta
+        .mars-planet {
+            position: absolute;
+            width:15rem;
+            height: 15rem;
+            border-radius:50%;
+            background-color: rgba(148,28,13,.9);
+            box-shadow: 0 0 40px -10px rgb(148,28,13);
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        //manchas por debajo
+        .mars-planet:before {
+            content:"";
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            top: 0rem;
+            background-color: rgb(120,13,5);
+            left: -1rem;
+            box-shadow: 6rem 2rem rgb(120,13,5), 10rem 4rem rgb(120,13,5), 
+                3rem 6rem rgb(120,13,5), 3rem 8rem rgb(120,13,5),
+                5rem 7rem rgb(120,13,5), 14rem 8rem rgb(120,13,5),
+                5rem 12rem rgb(120,13,5), 10rem 10rem rgb(120,13,5);
+        }
+        
+        //sombra pordebajo
+        .mars-planet:after {
+            content:"";
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-radius:50%;
+            box-shadow: inset -10px 10px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+    }
+}
+

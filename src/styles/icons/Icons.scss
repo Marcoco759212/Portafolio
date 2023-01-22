@@ -1,0 +1,15 @@
+.icon-arrow-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+    .icon-arrow-down{
+        transform: scale(1);
+    }
+}

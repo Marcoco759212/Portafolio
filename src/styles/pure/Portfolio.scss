@@ -1,0 +1,200 @@
+.portfolio-content{
+    position: relative;
+    padding: 0 45rem;
+    width: 100%;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+    gap: 5rem;
+    
+ 
+    .portfolio-projects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(var(--color-3-rgb), .7);
+        border-radius: .6rem;
+
+        > span{
+            width: 100%;
+            display: flex;
+            font-family: var(--font-3);
+            color: var(--color-2);
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 0 0 2rem 0;
+            padding: 1rem 1rem;
+            background-color: rgba(var(--color-3-rgb), 1);
+            border-radius: .6rem;
+        }
+
+        .portfolio-projects-items{
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            padding: 0 1rem 1rem 1rem;
+
+            > div{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(var(--color-3-rgb), 1);
+                border-radius: .6rem;
+                padding: 0 1rem;
+                gap: 5%;
+                overflow: hidden;
+
+
+                &.portfolio-item-medium{
+                    grid-row: span 3;
+                    grid-column: span 2;
+                }
+
+
+                .portfolio-item-img{
+                    width: 100%;
+                    height: 75%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s ease-in-out;
+                    border-radius: .6rem;
+                    overflow: hidden;
+
+                    img{
+                        display: flex;
+                        align-self: baseline;
+                        width: 100%;
+                       
+                        // padding: 1rem 1rem 0 1rem;
+                        object-fit: cover;
+                        transition: 0.4s ease-in-out;
+                    }
+                }
+
+                .portfolio-item-img:hover img{
+                    transform: scale(1.1);
+                    // transition: 0.4s ease-in-out;
+                }
+                
+                .portfolio-item-text{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span{
+                        position: relative;
+                        // height: 20%;
+                        font-family: var(--font-1);
+                        color: var(--color-1);
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        text-align: center;
+                        transition: all 0.4s ease-in-out;
+                        // padding: 1rem 0;
+                    }
+
+                    button{
+                        // width: 7rem;
+                        // background-color: rgba(var(--color-2-rgb), 1);
+                        background-color: var(--color-3);
+                        border: 2px solid var(--color-2);
+                        border-radius: 2rem;
+                        font-family: var(--font-1);
+                        color: var(--color-1);
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        text-align: center;
+                        padding: .5rem 1.5rem;
+                        transition: all 0.4s ease-in-out;
+                    }
+
+                    button:hover{
+                        padding: .5rem 4rem;
+                    }
+                }
+            }
+        }
+
+        .portfolio-projects-items div:hover{
+            .portfolio-item-text{
+                span{
+                    color: var(--color-4);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+    .portfolio-content{
+        padding: 0 30rem;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+    .portfolio-content{
+        padding: 0 15rem;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+    .portfolio-content{
+        padding: 0 5rem;
+    }
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+    .portfolio-content{
+        .portfolio-projects{
+            .portfolio-projects-items{
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+    .portfolio-content{
+        .portfolio-projects{
+            .portfolio-projects-items{
+                grid-template-rows: repeat(9, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

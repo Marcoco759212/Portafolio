@@ -1,0 +1,241 @@
+.home-content{
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .home-content-planets{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+
+        > div{
+            width: 100%;
+            height: 100%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            position: relative;
+            align-items: center;
+            // background-color: rgba(var(--color-3-rgb), 1);
+            // border-radius: .6rem;
+            padding: 1rem;
+            // overflow: hidden;
+        }
+    }
+    
+
+    .home-title div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .home-title h1 span{
+        display: flex;
+        color: rgba(var(--color-1-rgb), .8);
+        font-size: 12rem;
+        font-weight: 900;
+        font-family: var(--font-1);
+        line-height: 12rem;
+        z-index: 100;
+    }
+
+    .home-title div h1,
+    .home-title div h2{
+        display: flex;
+        color: rgba(var(--color-1-rgb), .8);
+        font-size: 12rem;
+        font-weight: 800;
+        font-family: var(--font-1);
+        letter-spacing: .5rem;
+        padding: 1rem;
+        z-index: 100;
+    }
+
+    .home-title h3 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+
+    .home-title h3 span{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        color: rgba(var(--color-1-rgb), .8);
+        font-size: 20rem;
+        font-weight: 900;
+        font-family: var(--font-1);
+        letter-spacing: .5rem;
+        line-height: 10rem;
+        
+        z-index: 100;
+    }
+
+    .home-title h3 span:hover{
+        color: rgba(var(--color-2-rgb), .8);
+        font-size: 20rem;
+        text-shadow: 0px -12px  rgba(var(--color-2-rgb), .8),
+         0px -11px  rgba(var(--color-2-rgb), .8);
+        //  0px -15px  var(--color-3),
+        //  0px -20px  rgba(var(--color-2-rgb), .8);
+    }
+
+}
+
+@media screen and (min-width: 3000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+    .home-content{
+        padding: 0 5rem;
+
+        .home-title h1 span{
+            font-size: 8rem;
+            line-height: 8rem;
+        }
+    
+        .home-title div h1,
+        .home-title div h2{
+            font-size: 8rem;
+        }
+    
+        .home-title h3 span{
+            font-size: 14rem;
+        }
+
+        .home-title h3 span:hover{
+            font-size: 14rem;
+            text-shadow: 0px -10px  rgba(var(--color-2-rgb), .8),
+            0px -9px  rgba(var(--color-2-rgb), .8);
+        }
+    }
+
+    .home-planet{
+        transform: scale(.8);
+    }
+
+}
+ 
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+    .home-planet{
+        transform: scale(.6);
+    }
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+    .home-planet{
+        transform: scale(.4);
+    }
+}
+
+/* Modificacion para planetas */
+@media screen and (max-width: 650px) {
+    // .home-content{
+    //     .home-content-planets{
+    //         display: none;
+    //     }
+    // }
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+    .home-content{
+        .home-title h1 span{
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+    
+        .home-title div h1,
+        .home-title div h2{
+            font-size: 5rem;
+        }
+    
+        .home-title h3 span{
+            font-size: 10rem;
+        }
+
+        .home-title h3 span:hover{
+            font-size: 10rem;
+            text-shadow: 0px -8px  rgba(var(--color-2-rgb), .8),
+            0px -7px  rgba(var(--color-2-rgb), .8);
+        }
+    }
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+    .home-content{
+        .home-title h1 span{
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    
+        .home-title div h1,
+        .home-title div h2{
+            font-size: 4rem;
+        }
+    
+        .home-title h3 span{
+            font-size: 8rem;
+        }
+
+        .home-title h3 span:hover{
+            font-size: 8rem;
+            text-shadow: 0px -6px  rgba(var(--color-2-rgb), .8),
+            0px -5px  rgba(var(--color-2-rgb), .8);
+        }
+    }
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+    .home-content{
+        .home-title h1 span{
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    
+        .home-title div h1,
+        .home-title div h2{
+            font-size: 4rem;
+        }
+    
+        .home-title h3 span{
+            font-size: 8rem;
+        }
+
+        .home-title h3 span:hover{
+            font-size: 8rem;
+            text-shadow: 0px -5px  rgba(var(--color-2-rgb), .8),
+            0px -4px  rgba(var(--color-2-rgb), .8);
+        }
+    }
+}

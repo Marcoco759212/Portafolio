@@ -1,0 +1,58 @@
+* {
+	scroll-behavior: smooth;
+	font-family: var(--font-1);
+}
+
+
+
+:root {
+	--color-1: rgb(255,255,255);
+    --color-1-rgb: 255, 255, 255;
+	--color-2: rgb(173,241,200);
+    --color-2-rgb: 173,241,200;
+    --color-3: rgb(25,31,42);
+    --color-3-rgb: 25,31,42;
+    --color-4: rgb(69,176,159);
+    --color-4-rgb: 69,176,159;
+
+    --color-tercero: rgb(0,113,227);
+    --color-tercero-rgb: 0,113,227;
+    --color-bg1: rgb(10,25,47);
+    --color-bg2: rgba(10,25,41,1);
+    --color-bg3: rgba(0,30,60,1);
+    --color-bg4: rgb(0,0,0);
+    --color-bg1-rgb: 10,25,47;
+    --color-bg2-rgb: 10,25,41;
+    --color-bg3-rgb: 22,55,89;
+    --color-bg4-rgb: 0,0,0;
+    --font-1: 'Segoe UI', sans-serif;
+    --font-2: 'Quicksand', sans-serif;
+    --font-3: 'Roboto Mono', monospace;
+	--animacion-01: transform 0.5s, width 0.4s cubic-bezier(1, 0.01, 0, 0.98) 0.2s;
+	--sombra-01: 0 0 3px 3px rgba(255, 0, 0, 0.5);
+	--color-primario-rgb: 255, 255, 255;
+}
+
+.App{
+    width: 100%;
+    min-height: 100vh;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#tsparticles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

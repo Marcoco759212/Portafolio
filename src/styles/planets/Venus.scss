@@ -1,0 +1,109 @@
+.venus-content {
+    position: absolute;
+    top: -50%;
+    left: 30%;
+    transform: rotate(10deg);
+
+    .venus{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+
+        //planeta
+        .venus-planet {
+            position: absolute;
+            width:15rem;
+            height: 15rem;
+            border-radius:50%;
+            background-color: rgba(119,44,21,.9);
+            box-shadow: 0 0 40px -10px rgba(119,44,21);
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        //manchas por debajo
+        .venus-planet:before {
+            content:"";
+            position: absolute;
+            width: 7.5rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            top: 0rem;
+            background-color: rgba(119,44,21);
+            left: -3rem;
+            box-shadow: 4rem 0 rgb(201,143,82), 10rem 0 rgba(119,44,21),
+                8rem 2rem rgb(201,143,82), 3rem 2rem rgb(119,44,21), 13rem 2rem rgb(119,44,21), 
+                7rem 4rem rgb(119,44,21), 1rem 4rem rgb(171,84,41), 12rem 4rem rgb(171,84,41),
+                2.5rem 6rem rgb(171,84,41), 13rem 6rem rgb(171,84,41), 8rem 6rem rgba(119,44,21,.9),
+                1rem 8rem rgb(201,143,82), 12rem 8rem rgb(201,143,82), 6rem 8rem rgba(119,44,21,.9),
+                -1rem 10rem rgb(201,143,82), 9rem 10rem rgb(201,143,82), 5rem 10rem rgba(119,44,21,.9), 12rem 10rem rgb(201,143,82),
+                4rem 12rem rgb(119,44,21), 14rem 412em rgba(119,44,21,.9), 10rem 12rem rgb(171,84,41),
+                2rem 14rem rgb(171,84,41),  13rem 14rem rgb(171,84,41);
+        }
+        
+        //sombra pordebajo
+        .venus-planet:after {
+            content:"";
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-radius:50%;
+            box-shadow: inset -10px 10px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1700px) {
+    .venus-content{
+        left: 20%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1500px) {
+    .venus-content{
+        left: 15%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1300px) {
+    .venus-content{
+        left: 10%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+    .venus-content{
+        left: 5%;
+    }
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

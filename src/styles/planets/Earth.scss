@@ -1,0 +1,95 @@
+.earth-content{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    height: 15rem;
+    width: 15rem;
+
+    ::before {
+        content:"";
+        position: absolute;
+        width: 5rem;
+        height: 1.5rem;
+        border-radius: 1.9rem;
+        top: 0rem;
+        background-color: rgba(204, 204, 204, 0.8);
+        left: 1rem;
+        box-shadow: 
+            9rem 3.8rem rgba(204, 204, 204, 0.8), 
+            -1rem 7rem rgba(204, 204, 204, 0.8), 
+            10rem 10rem rgba(204, 204, 204, 0.8),
+            3rem 13rem rgba(204, 204, 204, 0.8);
+        z-index: 3;
+    }
+
+    .earth{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:15rem;
+        height: 15rem;
+        border-radius:50%;
+        background-color: rgba(1,111,186,.9);
+        box-shadow: 0 0 40px -10px rgba(1,111,186,1);
+        overflow: hidden;
+        z-index: 1;
+
+        
+    }
+
+    .earth-american{
+        position: absolute;
+        top: calc(50% - 6rem);
+        left: calc(50% - 6rem);
+        width: 12rem;
+        height: 12rem;
+        z-index: 1;
+        
+    }
+
+
+
+}
+
+@media screen and (min-width: 3000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

@@ -1,0 +1,108 @@
+.mercury-content {
+    position: absolute;
+    top: -70%;
+    left: 30%;
+    transform: rotate(-10deg);
+
+    .mercury{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+
+        //planeta
+        .mercury-planet {
+            position: absolute;
+            width:15rem;
+            height: 15rem;
+            border-radius:50%;
+            background-color: rgba(128,109,92,.8);
+            box-shadow: 0 0 40px -10px rgb(128,109,92);
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        //manchas por debajo
+        .mercury-planet:before {
+            content:"";
+            position: absolute;
+            width: 7.5rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            top: 0rem;
+            background-color: rgb(168,125,86);
+            left: -1rem;
+            box-shadow: 2rem 1rem rgb(168,125,86), -1rem 2rem rgb(168,125,86), 
+                10rem 3.8rem rgb(168,125,86), 9rem 5rem rgb(168,125,86), 11rem 6rem rgb(168,125,86),
+                -1rem 6rem rgb(168,125,86),-2rem 7rem rgb(168,125,86), -3rem 8rem rgb(168,125,86),
+                11rem 10rem rgb(168,125,86), 13rem 11rem rgb(168,125,86),
+                1rem 12rem rgb(168,125,86), 3rem 13rem rgb(168,125,86);
+        }
+        
+        //sombra pordebajo
+        .mercury-planet:after {
+            content:"";
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-radius:50%;
+            box-shadow: inset -10px 10px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1700px) {
+    .mercury-content{
+        left: 25%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1500px) {
+    .mercury-content{
+        left: 20%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1300px) {
+    .mercury-content{
+        left: 15%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+    .mercury-content{
+        left: 10%;
+    }
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+    .mercury-content{
+        left: 5%;
+    }
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

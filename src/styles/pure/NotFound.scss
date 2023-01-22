@@ -1,0 +1,60 @@
+.notfound-content{
+    width: 100%;
+    height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+    .notfound-num{
+        font-family: var(--font-1);
+        color: rgba(var(--color-2-rgb), .8);
+        font-size: 20rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .notfound-text{
+        font-family: var(--font-1);
+        color: rgba(var(--color-1-rgb) ,.8);
+        font-size: 10rem;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+    .notfound-content{
+    
+        .notfound-num{
+            font-size: 15rem;
+        }
+    
+        .notfound-text{
+            font-size: 5rem;
+        }
+    }
+    
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

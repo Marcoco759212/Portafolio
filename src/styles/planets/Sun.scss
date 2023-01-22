@@ -1,0 +1,98 @@
+.sun-content{
+    position: absolute;
+    top: calc(50% - 9rem);
+    left: 40%;
+    height: 18rem;
+    width: 18rem;
+
+    .back-sun1{
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        width:20rem;
+        height: 20rem;
+        border-radius:50%;
+        background-color: rgba(251,214,1,.6);
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .back-sun2{
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        width:22rem;
+        height: 22rem;
+        border-radius:50%;
+        background-color: rgba(251,214,1,.6);
+        box-shadow: 0 0 40px -10px rgba(251,214,1, 1);
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .sun{
+        position: relative;
+        width:18rem;
+        height: 18rem;
+        border-radius:50%;
+        background-color: rgba(251,214,1,.7);
+        overflow: hidden;
+        z-index: 2;
+
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1700px) {
+    .sun-content{
+        left: 30%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1500px) {
+    .sun-content{
+        left: 20%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1300px) {
+    .sun-content{
+        left: 10%;
+    }
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+    .sun-content{
+        left: 0%;
+    }
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 1050px) {
+    .sun-content{
+        left: -10%;
+    }
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

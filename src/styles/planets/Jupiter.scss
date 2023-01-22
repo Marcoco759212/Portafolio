@@ -1,0 +1,55 @@
+.jupiter-content {
+    position: absolute;
+    top: 25%;
+    left: -15%;
+    transform: rotate(-10deg);
+
+    .jupiter{
+        position: relative;
+        width: 18rem;
+        height: 18rem;
+
+        //planeta
+        .jupiter-planet {
+            position: absolute;
+            width:18rem;
+            height: 18rem;
+            border-radius:50%;
+            background-color: rgba(199,199,197,.9);
+            box-shadow: 0 0 40px -10px rgb(199,199,197);
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        //lineas
+        .jupiter-planet:before {
+            content:"";
+            position: absolute;
+            width: 20rem;
+            height: 2rem;
+            border-radius: 1.9rem;
+            top: 0rem;
+            background-color: rgb(165,87,68);
+            left: -1rem;
+            box-shadow:  0 4rem rgb(165,87,68), 
+                0 8rem rgb(165,87,68),
+                0 7rem rgb(165,87,68), 0 8rem rgb(165,87,68),
+                0 12rem rgb(165,87,68),
+                0 15rem rgb(165,87,68);
+        }
+
+        .jupiter-planet::after {
+            content:"";
+            position: absolute;
+            width: 4rem;
+            height: 2rem;
+            border-radius: 2rem;
+            top: 9rem;
+            background-color: rgb(119,44,21);
+            left: 9rem;
+        }
+
+    }
+}
+
+
