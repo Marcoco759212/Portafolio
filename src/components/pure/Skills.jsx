@@ -79,6 +79,7 @@ const Skills = () => {
 
     return ( 
         <section id='skills' className='skills-content'>
+            <br/>
             <div className='skills-technicals'>
                 <span>Habilidades técnicas</span>
                 <div className='skills-technicals-items'>

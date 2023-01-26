@@ -3,8 +3,6 @@
 	font-family: var(--font-1);
 }
 
-
-
 :root {
 	--color-1: rgb(255,255,255);
     --color-1-rgb: 255, 255, 255;
@@ -31,6 +29,10 @@
 	--animacion-01: transform 0.5s, width 0.4s cubic-bezier(1, 0.01, 0, 0.98) 0.2s;
 	--sombra-01: 0 0 3px 3px rgba(255, 0, 0, 0.5);
 	--color-primario-rgb: 255, 255, 255;
+}
+
+.root{
+    background-color: black;
 }
 
 .App{

@@ -10,6 +10,7 @@ const Portfolio = () => {
 
     return (
         <section id='portfolio' className='portfolio-content'>
+            <br/>
             <div className='portfolio-projects'>
                 <span>Portafolio de proyectos</span>
                 <div className='portfolio-projects-items'>

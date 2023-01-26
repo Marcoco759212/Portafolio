@@ -6,11 +6,12 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contact'>
+            <br/>
             <div className='contact-content'>
                 <h1>Contactame</h1>
                 <div className='contact-content-desc'>
                     <p>Cualquier propuesta, pregunta o incluso un saludo; Puedes contactarme 
-                    a mi correo o en mi perfil de Linkedin, haré lo posible por contestar lo más 
+                    a mi correo o en mi perfil de Linkedin, contestaré lo más 
                     rápido posible.</p>
                 </div> 
                 <div className='contact-content-items'>

@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0 0 0;
-    gap: 5rem;
+    margin: 5rem 0 ;
+    gap: 7rem;
     
  
     .skills-technicals{
@@ -195,6 +195,7 @@
 @media screen and (max-width: 1600px) {
     .skills-content{
         padding: 0 15rem;
+        gap: 5rem;
     }
 }
 
@@ -263,6 +264,8 @@
 /* Tabletas, telefonos */
 @media screen and (max-width: 600px) {
     .skills-content{
+        padding: 0 2rem; 
+
         .skills-technicals{
             .skills-technicals-items{
                 display: flex;

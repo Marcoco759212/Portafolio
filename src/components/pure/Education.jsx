@@ -16,6 +16,7 @@ const Education = () => {
 
     return (
         <section id='education' className='education-content'>
+        <br/>
             <div className='education-timeline'>
                 <div className='education-timeline-title'>
                     <span>Educación y cursos complementarios.</span>

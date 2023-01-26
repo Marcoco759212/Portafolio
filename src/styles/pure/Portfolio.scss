@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0;
-    gap: 5rem;
+    margin: 5rem 0;
+    gap: 7rem;
     
  
     .portfolio-projects{
@@ -150,6 +150,7 @@
 @media screen and (max-width: 1600px) {
     .portfolio-content{
         padding: 0 15rem;
+        gap: 5rem;
     }
 }
 
@@ -186,7 +187,9 @@
 
 /* Tabletas, telefonos */
 @media screen and (max-width: 600px) {
-
+    .portfolio-content{
+        padding: 0 2rem;
+    }
 }
 
 /* Telefonos modernos */

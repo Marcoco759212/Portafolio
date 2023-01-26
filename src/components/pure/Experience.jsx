@@ -16,6 +16,7 @@ const Experience = () => {
 
     return (
         <section id='experience' className='exp-content'>
+            <br/>
             <div className='exp-professional'>
                 <div className='exp-professional-title'>
                     <span>Experiencia profesional</span>

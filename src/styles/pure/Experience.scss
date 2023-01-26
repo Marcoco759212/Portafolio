@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     // align-items: center;
-    margin: 10rem 0;
-
+    margin: 5rem 0;
+    gap: 7rem;
 
     .exp-professional{
         width: 100%;
@@ -120,6 +120,7 @@
 @media screen and (max-width: 1600px) {
     .exp-content{
         padding: 0 15rem;
+        gap: 5rem;
     }
 }
 
@@ -142,7 +143,9 @@
 
 /* Tabletas, telefonos */
 @media screen and (max-width: 600px) {
-
+    .exp-content{
+        padding: 0 2rem;
+    }
 }
 
 /* Telefonos modernos */
